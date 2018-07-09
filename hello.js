@@ -1,1 +1,2 @@
-// Author: FirstName LastName
+// Author: Naia Crump
+console.log("Hello World!");
