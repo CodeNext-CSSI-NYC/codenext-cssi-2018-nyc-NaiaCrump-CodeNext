@@ -9,15 +9,25 @@ const q = 60;
 const r = 25;
 
 // 1. Is 91 divisible by 13? (The answer should be either true or false)
+console.log(91%13);
+// True 
 
 // 2. What is the result when the q divided by r is rounded to the nearest integer?
+math.round(q/r)
+//2
 
 // 3. Is the product of p and r greater than q squared? (The answer should be either true or false)
+p * r > q ** 2
+//false
 
 // 4. What is the remainder when the sum of q and r is divided by p?
+(q + r) % p
+//1
 
 // 5. 27 squared is equal to what number raised to the third power?
 
 // 6. What is the absolute value of p - q? (Find out how to do absolute value by searching online.)
+Math.abs(p - q)
+//48
 
 // 7. Find another math operation we haven't talked about yet on the MDN (Mozilla Developer Network) and try it out below.
