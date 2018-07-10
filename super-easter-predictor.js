@@ -1,11 +1,12 @@
 // Author: Naia Crump
 var readline = require("readline-sync");
+var randomInt = require("random-int");
 console.log("Welcome to Super Easter Predictor!")
 
 console.log("******************************************************************")
 
-console.log("Please enter a year AFTER 1582.")
-let userYear = readline.question("Enter a year: ")
+console.log("We'll randomize a year, and see what date Easter was that year! Here we go! ")
+let userYear = randomInt(1582, 9999);
 
 console.log("******************************************************************")
 
@@ -29,5 +30,5 @@ let day = p + 1;
 let month = n;
 
 console.log("Thank you for using Easter Year Predictor!!")
-console.log("That year, Easter is on " + month + "/" + day);
+console.log("In " + userYear + ", Easter is on " + month + "/" + day);
 
