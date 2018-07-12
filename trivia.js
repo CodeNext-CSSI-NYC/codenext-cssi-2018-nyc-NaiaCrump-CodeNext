@@ -17,7 +17,7 @@ if (userQuest1 == 16){
 
 var userQuest2 = readline.question("Second Question!: What is Naia's horoscope sign? (ie: Libra, Cancer, Aquarius, etc) " )
 
-if (userQuest2 == "aries" || "Aries"){
+if ((userQuest2 == "aries") || (userQuest2 == "Aries")){
 	console.log("You're right!")
 	points++
 } else {
@@ -37,7 +37,7 @@ console.log("(I'll give you a hint: the studios in her school are: Fine Art, Dra
 var userQuest4 = readline.question("Fourth question, almost there! What is Naia's studio in school? ")
 
 
-if (userQuest4 == "Drama" || "drama"){
+if ((userQuest4 == "Drama") || (userQuest4 == "drama")){
 	console.log("Hey, that's right!")
 	points++
 } else {
@@ -47,7 +47,7 @@ if (userQuest4 == "Drama" || "drama"){
 console.log("I'll be nice and give you choices: 'Kill la Kill', 'Black Butler', 'DevilMan Crybaby', 'One Punch Man' or all of them. ")
 var userQuest5 = readline.question("Fifth question, getting a bit harder: What is Naia's favorite anime?" )
 
-if (userQuest5 == "All" || "all"){
+if ((userQuest5 == "All") || (userQuest5 == "all")){
 	console.log("Wow, you got it!")
 	points++
 } else {
@@ -64,5 +64,5 @@ if (userQuest6 == 3){
 }
 
 
-console.log("You're all done! You got " + points + " out of 7 correct!")
+console.log("You're all done! You got " + points + " out of 6 correct!")
 
