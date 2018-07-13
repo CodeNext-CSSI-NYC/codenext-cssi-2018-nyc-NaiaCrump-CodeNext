@@ -40,16 +40,16 @@ frontAgain("edit") → false
 frontAgain("ed") → true
 
 // *******************************************************************************/
-// function frontAgain(word) {
-//   if (word.charAt(0) && word.charAt(1) == word.charAt(word.length - 1) && word.charAt(word.length - 2)){
-//     return true
-//   } else {
-//     return false 
-//   }
-// }
+function frontAgain(word) {
+  if (word.charAt(0) && word.charAt(1) == word.charAt(word.length - 1) && word.charAt(word.length - 2)){
+    return true
+  } else {
+    return false 
+  }
+}
 
 // // Uncomment the line below to test this function.
-// testFrontAgain();
+testFrontAgain();
 
 
 
@@ -74,6 +74,7 @@ function withoutX2(word) {
   }
 }
 
+console 
 // Uncomment the line below to test this function.
 testWithoutX2();
 

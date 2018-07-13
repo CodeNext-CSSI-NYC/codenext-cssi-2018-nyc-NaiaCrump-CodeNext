@@ -93,6 +93,7 @@ function parrotTrouble(talking, hour){
 
 // Call it a few times and console.log the result, to make sure it is working
 
+
 // Test out your function using our provided tests by uncommenting the line testParrotTrouble() at the very bottom of this file
 
 /****************************************************************************
