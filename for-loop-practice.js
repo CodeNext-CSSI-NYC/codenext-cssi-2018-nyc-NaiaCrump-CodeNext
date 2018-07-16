@@ -88,7 +88,7 @@ function countAs(word) {
 
 
 // // Some tests
-//console.log(countAs("happy") == 1);
+console.log(countAs("happy") == 1);
 //console.log(countAs("lady gaga") == 3);
 // console.log(countAs("") == 0);
 /************************************************************************************************
