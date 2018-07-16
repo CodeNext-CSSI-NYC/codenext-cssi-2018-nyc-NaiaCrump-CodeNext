@@ -30,6 +30,7 @@ while (userGuess != correctAnswer){
 if (howManyGuesses <= 5){ 
 	console.log("It took you " + howManyGuesses + " guesses! That's amazing!");
 } else if (howManyGuesses >= 6){
+	console.log("It took you " + howManyGuesses + " guesses. Oof.");
 }
 console.log("Congradulations! " + correctAnswer + " was the right guess!");
 
