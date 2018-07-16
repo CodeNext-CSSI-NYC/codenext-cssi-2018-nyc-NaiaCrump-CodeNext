@@ -232,33 +232,33 @@ let arrayDeck = []
 // Make a for loop that goes from 1 to 13.
 for ( j =  1; j <= 13; j++){
 	for (k = 1; k <= 4; k++){
-		let cardNum = ""
+		let cardNum = "";
 
-		if (j >= 2 || j <= 10){
-			cardNum = j
+		if (j >= 2 && j <= 10){
+			cardNum = j;
 		} else if (j == 1){
-			cardNum = "A"
+			cardNum = "A";
 		} else if (j == 11){
-			cardNum = "J"
+			cardNum = "J";
 		} else if (j == 12){
-			cardNum = "Q"
+			cardNum = "Q";
 		} else if (j == 13){
-			cardNum = "K"
+			cardNum = "K";
 		}
 
-		let cardSuit = ""
+		let cardSuit = "";
 
 		if (k == 1){
-			cardSuit = "clubs"
+			cardSuit = "clubs";
 		} else if (k == 2){
-			cardSuit = "diamonds"
+			cardSuit = "diamonds";
 		} else if (k == 3){
-			cardSuit = "spades"
+			cardSuit = "spades";
 		} else if (k == 4){
-			cardSuit = "hearts"
+			cardSuit = "hearts";
 		}
 
-		arrayDeck.push(cardNum + " of " + cardSuit)
+		arrayDeck.push(cardNum + " of " + cardSuit);
 
 	}
 }
