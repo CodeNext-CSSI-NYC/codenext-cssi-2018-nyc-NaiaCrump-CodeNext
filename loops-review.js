@@ -17,8 +17,8 @@ while (userGuess != correctPassword){
 	userGuess = readline.question("What is the secret password?: ");
 } 
 
-console.log("Congradulations! You got the password!")
-console.log("*************")
+console.log("Congradulations! You got the password!");
+console.log("*************");
 // Keep asking them until they get it right.
 // At the end, tell them how many guesses it took them.
 
@@ -29,9 +29,9 @@ console.log("*************")
 // 2. Make a for loop that prints out the numbers from 0 to 9.
 
 for (a = 0; a < 10; a++){
-	console.log(a)
+	console.log(a);
 }
-console.log("*************")
+console.log("*************");
 
 /************************************************************************************************************************************
 ************************************************************************************************************************************/
@@ -41,29 +41,47 @@ console.log("*************")
 // This makes i go up by two each time, so that it skips odd numbers.
 
 for (b = 0; b <= 100; b += 2){
-	console.log(b)
+	console.log(b);
 }
-console.log("*************")
+console.log("*************");
 // The other way is to use an if statement inside the for loop that only prints
 // even numbers. Make sure you can do it both ways. (As in, actually do it both ways.)
 
  for (c = 0; c <= 100; c++){
  	if (c % 2 == 0 ){
- 		console.log(c)
+ 		console.log(c);
  	}
  }
+console.log("*************");
 
-
-
-
+/************************************************************************************************************************************
+************************************************************************************************************************************/
 
 // 4. Make a variable called sum that is equal to 0.
+let sum = 0;
+let userNumber1;
 // Keep asking the user to enter in numbers until all of the numbers they have typed in
 // add up to more than 100 in total.
+console.log("Your goal is to enter numbers to get to 100 or more!");
+
+while (sum < 100){
+	let userNumber1 = parseInt(readline.question("Enter a number: "));
+	sum = sum + userNumber1;
+	console.log("You are at " + sum + " out of 100." );	
+}
+
+if (sum > 100 ){
+	let sumOver = sum - 100;
+	console.log("You got " + sumOver + " over 100.")
+} else {
+	console.log("You got it!")
+}
 // For example, it might end after two times through the loop if I type 77, 44.
 // But it might take many more attempts if I type 1, 1, 1, 1, 1 ....
+console.log("*************");
 
-
+/************************************************************************************************************************************
+************************************************************************************************************************************/
 
 // 5a. Use a loop to make this pattern:
 // *
@@ -72,7 +90,15 @@ console.log("*************")
 // ****
 // *****
 // ******
+let patternFinal = ""
 
+for (let e = 0; e < 6; e++){
+	console.log(patternFinal = patternFinal + "*" )
+
+}
+
+/************************************************************************************************************************************
+************************************************************************************************************************************/
 
 // 5b. Use a loop to make this pattern:
 // ***********
@@ -90,15 +116,30 @@ console.log("*************")
 // ***********
 //
 
+for (let d = 0; d < 6; d++){
+	console.log("***********");
+	console.log("           ");
+}
+
+/************************************************************************************************************************************
+************************************************************************************************************************************/
 
 // 6. Use this line:
-// let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // Set up a for loop that goes through this string.
+for (f = 0; f < alphabet.length; f++){
+	let letter = alphabet[f].toLowerCase();
+	console.log(letter);
+}
+console.log("*************");
+
 // Do not use 26 or 25 in your for loop. Instead use the .length property of strings.
 // Inside the for loop, store the corresponding letter for each index in a variable called letter.
 // Then, print out the toLowerCase() version of each letter.
 // You should see the alphabet, in lower case, with a new letter on each line.
 
+/************************************************************************************************************************************
+************************************************************************************************************************************/
 
 
 // 7. Last time we listed out all of the factors of a number.
