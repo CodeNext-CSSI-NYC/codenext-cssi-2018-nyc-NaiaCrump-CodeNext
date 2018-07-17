@@ -27,9 +27,9 @@ while (userGuess != correctAnswer){
 	userGuess = readline.question("Please guess another number: ");	
 }
 
-if (howManyGuesses <= 5){ 
+if (howManyGuesses <= 10){ 
 	console.log("It took you " + howManyGuesses + " guesses! That's amazing!");
-} else if (howManyGuesses >= 6){
+} else if (howManyGuesses >= 11){
 	console.log("It took you " + howManyGuesses + " guesses. Oof.");
 }
 console.log("Congradulations! " + correctAnswer + " was the right guess!");
