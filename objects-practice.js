@@ -84,7 +84,7 @@ return letterCounter
 
 }
 
-console.log(letterCount("supercalifragilisticexpialidocious"))
+console.log(letterCount("supercalifragilisticexpialidocious"));
 // For example, letterCount("mississippi") would return something like:
 // {
 //   m: 1,
@@ -103,7 +103,17 @@ console.log(letterCount("supercalifragilisticexpialidocious"))
 // that contains each letter in the original string exactly once.
 function eachLetterOnce(str) {
 
+	let isLetterThereObj = {};
+
+	for (b = 0; b < str.length; b++){
+		let letter = str[b];
+		isLetterThereObj[letter] = true;
+		 
+	}
+
 }
+
+
 // So eachLetterOnce("mississippi") would return "misp" (letters may be in another order).
 // Hint: Use an object to keep track of what letters appear in the word. You can
 // set obj[letter] = true for each letter you come across.
