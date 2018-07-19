@@ -174,16 +174,23 @@ function inWords(givenWord) {
   return false;
 }
 // These should all print true when you are done.
-console.log(inWords("pub") == true);
-console.log(inWords("starrrrr") == false);
-console.log(inWords("inconceivable"));
+// console.log(inWords("pub") == true);
+// console.log(inWords("starrrrr") == false);
+// console.log(inWords("inconceivable") == false);
 
 
 
 // 8. Write a function that takes in a letter and returns an array of
 // all of the words that start and end with that letter.
-function startAndEndWith(letter) {
-  //
+function startAndEndWith(givenLetter) {
+  let arrayStrtEnd = [];
+  for (g = 0; g < words.length; g++){
+    let currentWord = words[g];
+    if ((givenLetter == currentWord.charAt(0)) && (givenLetter == currentWord.charAt(currentWord.length - 1))){
+      arrayStrtEnd.push(currentWord);
+    }
+  }
+  return arrayStrtEnd;
 }
 // These should all print true when you are done.
 // console.log(startAndEndWith("y").length == 3);
@@ -196,12 +203,20 @@ function startAndEndWith(letter) {
 // 9. Write a function that takes in a number and returns the factorial of that number.
 // More info: https://www.mathsisfun.com/numbers/factorial.html
 // Use a for loop. Do not try to use the factorial symbol (!), it does not mean that in coding.
+
+
 function factorial(num) {
 
+  for (h = num - 1; h >= 1; h--){
+    num = num * h;
+    console.log(num);
+  }
+  
+  return num;
 }
 // These should all print true when you are done.
-// console.log(factorial(5) == 120);
-// console.log(factorial(1) == 1);
+console.log(factorial(5) == 120);
+console.log(factorial(1) == 1);
 
 
 
@@ -214,6 +229,9 @@ function factorial(num) {
 function fibonacci(num) {
   let arr = [0, 1]; // This is the starter array that you will add numbers to
   // For loop here
+  for (i = 0; i < num; i++){
+    
+  }
   return arr;
 }
 // These tests should print true when you are done
