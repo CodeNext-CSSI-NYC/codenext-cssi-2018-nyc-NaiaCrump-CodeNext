@@ -138,8 +138,6 @@ console.log("*************");
 // Then, print out the toLowerCase() version of each letter.
 // You should see the alphabet, in lower case, with a new letter on each line.
 
-/************************************************************************************************************************************
-************************************************************************************************************************************/
 
 
 // 7. Last time we listed out all of the factors of a number.
